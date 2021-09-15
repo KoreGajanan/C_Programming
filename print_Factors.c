@@ -9,7 +9,7 @@ void printFactors(int);
 int main()
 {
 	int iNo = 0;
-	printf("Enter nuber  \n");
+	printf("Enter number:  ");
 	scanf("%d",&iNo);
 	
 	printFactors(iNo);
@@ -22,7 +22,7 @@ void printFactors(int iNo)
 {
 	int iCnt = 0;
 	
-	printf("============================\n");
+	printf("Factors of %d : \n",iNo);
 	for(iCnt=1 ; iCnt <= iNo/2; iCnt++)
 	{
 		if(iNo % iCnt == 0)
@@ -30,4 +30,5 @@ void printFactors(int iNo)
 			printf("%d\n",iCnt);
 		}
 	}
+	
 }
