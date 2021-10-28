@@ -34,7 +34,7 @@ int countWords(char *src)
 	{
 		while(*src == ' ')
 		{
-			*src++;
+			src++;
 		}
 		if(*src == '\0')
 		{
